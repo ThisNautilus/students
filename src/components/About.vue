@@ -1,12 +1,12 @@
 <template>
-  <div>
-    
+  <div class="about container">
+    about组件
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'about',
   props: {
     msg: String
   }

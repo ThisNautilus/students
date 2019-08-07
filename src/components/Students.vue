@@ -1,12 +1,22 @@
 <template>
-  <div>
-    
+  <div class="students container">
+    <h1 class="page-header">学生管理系统</h1>
+    <table class="table table-stripede">
+      <thead>
+        <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+    </table>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'students',
   props: {
     msg: String
   }
