@@ -16,12 +16,18 @@
             <li><router-link to="/">主页</router-link></li>
             <li><router-link to="/about">关于</router-link></li>
           </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><router-link to="/add">添加学生</router-link></li>
+          </ul>
         </div>
       </div>
     </nav>
     <router-view></router-view>
   </div>
 </template>
+
+
+
 
 <style lang="less">
 

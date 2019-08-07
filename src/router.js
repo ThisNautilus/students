@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Students from './components/Students.vue'
 import About from './components/About.vue'
+import Add from './components/Add.vue'
 
 Vue.use(Router)
 
@@ -18,6 +19,11 @@ export default new Router({
             path: '/about',
             name: 'about',
             component: About
+        },
+        {
+            path: '/add',
+            name: 'add',
+            component: Add
         }
     ]
 })
