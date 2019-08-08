@@ -1,6 +1,7 @@
 <template>
   <div class="about container">
-    about组件
+    <h1 class="page-header">改变</h1>
+    希望坚持下去会有一个令自己满意的结果，加油！
   </div>
 </template>
 

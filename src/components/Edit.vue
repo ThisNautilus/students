@@ -1,7 +1,7 @@
 <template>
-  <div class="add container">
-    <h1 class="page-header">添加学生</h1>
-    <form @submit.prevent="addStudents">
+  <div class="edit container">
+    <h1 class="page-header">编辑用户</h1>
+    <form @submit.prevent="updateStudents">
         <div class="well">
             <h4>添加学生信息</h4>
             <div class="form-group">
@@ -23,15 +23,16 @@
                 <label>学校</label>
                 <input type="text" class="form-control" placeholder="请输入学校" v-model="students.college">
             </div>
-            <button class="btn btn-primary">添加</button>
+            <button class="btn btn-primary">确认</button>
         </div>
     </form>
   </div>
 </template>
 
 <script>
+import axios from 'axios'
 export default {
-  name: 'add',
+  name: 'edit',
   data(){
       return {
           students:{},
@@ -39,29 +40,39 @@ export default {
       }
   },
   methods:{
-      addStudents(){
+      getStudents(id){
+           axios.get("http://localhost:3005/students/" + id)
+    .then(response=>{
+      console.log(response);
+      this.students = response.data      
+    })
+      },
+      updateStudents(){
         //   console.log(123);
         if(!this.students.name || !this.students.score || !this.students.id){
             console.log("请添加对应信息");
         }else{
-            let newStudent = {
+            let updateStudent = {
                 name:this.students.name,
                 id:this.students.id,
                 score:this.students.score,
                 age:this.students.age,
                 college:this.students.college
             }
-            this.$axios.post('http://localhost:3005/students',newStudent)
+            this.$axios.put('http://localhost:3005/students/' + this.$route.params.id,updateStudent)
             .then(response => {
                 // console.log(response);
                 // 添加成功之后跳转到主页上去
-                this.$router.push({path:'/',query:{alter:"用户信息添加成功！"}})
+                this.$router.push({path:'/',query:{alter:"用户信息更新成功！"}})
             })
             .catch(function (error) {
                 console.log(error);
             });
         }
       }
+  },
+  created(){
+      this.getStudents(this.$route.params.id);
   }
 }
 </script>
