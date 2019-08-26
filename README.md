@@ -1,6 +1,7 @@
 ## Students：学生管理系统
 ## 项目组成
-[](https://ww1.yunjiexi.club/2019/08/26/0dcf6a7e34ba0f752e74c4b1aea3da48.png)
+<img src="https://ww1.yunjiexi.club/2019/08/26/0dcf6a7e34ba0f752e74c4b1aea3da48.png">
+
 ## 技术栈
 - MVVM框架：vue.js(2.0)
 - 状态管理：Vuex
@@ -12,4 +13,5 @@
 1.先运行 `npm run json:server`来启动本地json接口。[本项目数据](https://github.com/ThisNautilus/jsonserver)
 2.运行`npm install`安装依赖
 3.运行`npm run serve`启动项目
+
 ## screenshot
