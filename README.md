@@ -9,9 +9,9 @@
 - 服务端通信：axios、json-server
 - 第三方库：bootstrap
 ## 启动过程
-1.先运行 `npm run json:server`来启动本地json接口。[本项目数据](https://github.com/ThisNautilus/jsonserver)
-2.运行`npm install`安装依赖
-3.运行`npm run serve`启动项目
+- 1.先运行 `npm run json:server`来启动本地json接口。[本项目数据](https://github.com/ThisNautilus/jsonserver)
+- 2.运行`npm install`安装依赖
+- 3.运行`npm run serve`启动项目
 
 ## screenshot
 效果总览
