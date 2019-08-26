@@ -4,7 +4,7 @@
 
 ## 技术栈
 - MVVM框架：vue.js(2.0)
-- 脚手架：ve-cli
+- 脚手架：vue-cli
 - 前端路由：Vue-Router
 - 服务端通信：axios、json-server
 - 第三方库：bootstrap
