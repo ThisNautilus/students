@@ -4,9 +4,8 @@
 
 ## 技术栈
 - MVVM框架：vue.js(2.0)
-- 状态管理：Vuex
 - 脚手架：ve-cli
-- 前端路由：Vue Router
+- 前端路由：Vue-Router
 - 服务端通信：axios、json-server
 - 第三方库：bootstrap
 ## 启动过程
